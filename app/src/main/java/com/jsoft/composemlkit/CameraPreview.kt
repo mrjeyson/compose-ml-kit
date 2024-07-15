@@ -104,6 +104,7 @@ fun CameraPreview(
                         ) { imageProxy ->
                             val mediaImage = imageProxy.image
                             if (mediaImage != null) {
+
                                 /// Define the region of interest as a fraction of the image size
                                 val roi = Rect(
                                     left = 0.3f, top = 0.4f, right = 0.8f, bottom = 0.6f
@@ -226,6 +227,7 @@ fun OverlayFrame() {
         )
     }
 }
+
 
 @Composable
 fun LicensePlateScannerScreen() {
