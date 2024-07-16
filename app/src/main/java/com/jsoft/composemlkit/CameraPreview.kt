@@ -117,12 +117,12 @@ fun CameraPreview(
                                 val image = InputImage.fromBitmap(croppedBitmap, 0)
 
                                 textRecognizer.process(image).addOnSuccessListener { visionText ->
-                                        onTextRecognized(visionText.text)
-                                    }.addOnFailureListener {
-                                        //Hanfle the error
-                                    }.addOnCompleteListener {
-                                        imageProxy.close()
-                                    }
+                                    onTextRecognized(visionText.text)
+                                }.addOnFailureListener {
+                                    //Hanfle the error
+                                }.addOnCompleteListener {
+                                    imageProxy.close()
+                                }
                             }
                         }
                     }
@@ -227,7 +227,6 @@ fun OverlayFrame() {
         )
     }
 }
-
 
 @Composable
 fun LicensePlateScannerScreen() {
