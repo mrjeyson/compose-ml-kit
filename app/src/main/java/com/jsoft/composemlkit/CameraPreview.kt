@@ -218,7 +218,6 @@ fun OverlayFrame() {
             size = Size(canvasWidth - rectLeft - rectWidth, rectHeight)
         )
 
-
         // Draw the frame
         drawRect(
             color = Color.White,
