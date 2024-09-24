@@ -69,7 +69,6 @@ fun CameraPreview(
             ) == PackageManager.PERMISSION_GRANTED
         )
     }
-
     val launcher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestPermission()
     ) { granted ->
