@@ -59,7 +59,6 @@ fun CameraPreview(
     val cameraProviderFuture = remember {
         ProcessCameraProvider.getInstance(context)
     }
-
     val textRecognizer = remember {
         TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS)
     }
