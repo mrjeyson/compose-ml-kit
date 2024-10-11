@@ -49,6 +49,7 @@ import com.google.mlkit.vision.text.latin.TextRecognizerOptions
 import java.io.ByteArrayOutputStream
 
 
+
 @OptIn(ExperimentalGetImage::class)
 @Composable
 fun CameraPreview(
